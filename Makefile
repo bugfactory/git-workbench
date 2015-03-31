@@ -2,7 +2,7 @@
 
 DOCKER_IMAGE = git-workbench
 
-all: build shell
+all: build run
 
 build:
 	docker build --rm=true --force-rm=true --no-cache --tag $(DOCKER_IMAGE) .
